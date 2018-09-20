@@ -136,6 +136,7 @@
         userinfo: {},//当前文章页所有内容
         topicollect: {},//收藏的帖子
         // post: {}
+        name:'x'
       }
     },
     methods:{

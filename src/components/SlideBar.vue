@@ -64,7 +64,7 @@
                 name: 'post_content',
                 params:{
                   id: list.id,
-                  name: list.author,loginname
+                  name: list.author.loginname
                 }
               }">
                 <span class="dark topic_title">{{list.title}}</span>
