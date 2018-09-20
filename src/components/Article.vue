@@ -88,6 +88,7 @@ export default {
     return {
       isLoading: false,
       post: {},//当前文章页所有内容
+      name: 'x'
     }
   },
   methods:{

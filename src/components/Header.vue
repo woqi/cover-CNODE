@@ -1,16 +1,27 @@
 <template>
   <div class="header-wrap">
     <div class="header">
-      <a class="brand" href="http://localhost:8080/#/">
-        <img src="../assets/cnodejs_light.svg" alt="">
-      </a>
+      <router-link :to="{
+        name:'root'
+        }">
+        <a class="brand">
+          <img src="../assets/cnodejs_light.svg" alt="">
+        </a>
+      </router-link>
+      
       <ul class="pull-right">
-        <li><a href="">首页</a></li>
-        <li><a href="">新手入门</a></li>
-        <li><a href="">API</a></li>
-        <li><a href="">关于</a></li>
-        <li><a href="">注册</a></li>
-        <li><a href="">登录</a></li>
+        <li>
+          <router-link :to="{
+              name:'root'
+              }">
+              <a class="header-text" href="">首页</a>
+          </router-link>
+        </li>
+        <li><a class="header-text" href="">新手入门</a></li>
+        <li><a class="header-text" href="">API</a></li>
+        <li><a class="header-text" href="">关于</a></li>
+        <li><a class="header-text" href="">注册</a></li>
+        <li><a class="header-text" href="">登录</a></li>
       </ul>
     </div>
     
@@ -63,7 +74,7 @@ export default {
   .pull-right > li{
     display: inline-block;  
   }
-  .pull-right > li > a{
+  .pull-right .header-text{
     text-decoration: none;
     padding: 10px 15px;
     color: #ccc;

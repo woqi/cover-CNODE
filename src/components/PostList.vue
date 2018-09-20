@@ -85,7 +85,8 @@ export default {
     return{
       isLoading: false,
       posts: [],//代表页面列表数组
-      postpage: 1
+      postpage: 1,
+      name: 'x'
     }
   },
   components:{
@@ -222,6 +223,7 @@ export default {
     vertical-align: middle;
     font-size: 16px;
     line-height: 30px;
+    overflow: hidden;
   }
   .topic_title:hover{
     text-decoration: underline;
