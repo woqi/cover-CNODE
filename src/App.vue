@@ -35,6 +35,7 @@ export default {
     font-family: "Helvetica Neue","Luxi Sans","DejaVu Sans",Tahoma,"Hiragino Sans GB",STHeiti,sans-serif!important;
     background-color: #e1e1e1;
     margin: 0;
+    
   }
   .main{
     width: 90%;
